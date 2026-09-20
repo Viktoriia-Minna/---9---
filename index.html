@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Контакти</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="page-shell">
+			<section class="contact-app" aria-labelledby="contact-title">
+				<div class="section-heading">
+
+					<p class="eyebrow">Особиста адресна книга</p>
+					<h1 id="contact-title">Мої контакти</h1>
+					<p class="intro">Додавай, редагуй і видаляй контакти. Дані зберігаються у браузері.</p>
+				</div>
+
+				<form id="contact-form" class="contact-form">
+					<div class="form-grid">
+						<div>
+							<label for="first-name">Ім’я</label>
+							<input id="first-name" name="firstName" type="text" placeholder="Вікторія" autocomplete="given-name" required />
+						</div>
+						<div>
+							<label for="last-name">Прізвище</label>
+							<input id="last-name" name="lastName" type="text" placeholder="Ільіна" autocomplete="family-name" required />
+						</div>
+					</div>
+					<label for="phone">Телефон</label>
+					<input id="phone" name="phone" type="tel" placeholder="+380 *********" autocomplete="tel" required />
+					<label for="email">Електронна адреса</label>
+					<input id="email" name="email" type="email" placeholder="viktoria@example.com" autocomplete="email" required />
+					<div class="form-actions">
+						<button id="submit-button" class="primary-button" type="submit">Додати контакт</button>
+						<button id="cancel-button" class="secondary-button" type="button" hidden>Скасувати</button>
+					</div>
+				</form>
+				<p id="contact-message" class="contact-message" aria-live="polite"></p>
+				<ul id="contact-list" class="contact-list"></ul>
+
+			</section>
+		</main>
+		<script src="main.js"></script>
+		
+	</body>
+</html>
